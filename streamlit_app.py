@@ -23,7 +23,7 @@ def get_answer(question: str) -> str:
 
 # Set page configuration and add header
 st.set_page_config(
-    page_title="gpt4freeGUI",
+    page_title="GPT4free by AOL Gaming",
     initial_sidebar_state="expanded",
     page_icon="🧠",
     menu_items={
@@ -35,7 +35,7 @@ st.set_page_config(
 st.header('GPT4free GUI')
 
 # Add text area for user input and button to get answer
-question_text_area = st.text_area('🤖 Ask Any Question :', placeholder='Explain quantum computing in 50 words')
+question_text_area = st.text_area('🤖 Ask Any Question :', placeholder='Explain quantum computing in UwU-speak')
 if st.button('🧠 Think'):
     answer = get_answer(question_text_area)
     escaped = answer.encode('utf-8').decode('unicode-escape')
